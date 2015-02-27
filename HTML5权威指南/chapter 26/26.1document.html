@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example</title>
+</head>
+<body>
+    <p id="fruit">
+
+    </p>
+    <p id="apple">
+
+    </p>
+    <script type="text/javascript">
+        document.writeln("<pre>ULR:"+ document.URL);
+        var elems = document.getElementsByTagName("p");
+        for(var i=0;i<elems.length;i++){
+            document.writeln("Element ID:"+ elems[i].id);
+            elems[i].style.border = "medium double black";
+            elems[i].style.padding = "4px";
+        }
+    </script>
+</body>
+</html>

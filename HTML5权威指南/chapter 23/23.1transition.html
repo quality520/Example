@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style type="text/css">
+        p{
+            padding:5px;
+            border:medium double black;
+            background-color:lightgray;
+            font-family:sans-serif;
+        }
+        #banana{
+            font-size:large;
+            border:medium solid black;
+            transition-delay:10ms;
+            -webkit-transition-delay:10ms;
+            -moz-transition-delay:10ms;
+            -o-transition-delay:10ms;
+            -ms-transition-delay:10ms;
+            transition-duration:250ms;
+            -webkit-transition-duration:250ms;
+            -moz-transition-duration:250ms;
+            -ms-transition-duration:250ms;
+            -o-transition-duration:250ms;
+        }
+        #banana:hover{
+            font-size:x-large;
+            border:medium solid white;
+            background-color:green;
+            color:white;
+            padding:4px;
+            transition-delay:100ms;
+            -webkit-transition-delay:100ms;
+            -moz-transition-delay:100ms;
+            -o-transition-delay:100ms;
+            -ms-transition-delay:100ms;
+
+            transition-duration:500ms;
+            -webkit-transition-duration:500ms;
+            -moz-transition-duration:500ms;
+            -ms-transition-duration:500ms;
+            -o-transition-duration:500ms;
+
+            transition-timing-function:linear;
+            -webkit-transition-timing-function:linear;
+            -moz-transition-timing-function:linear;
+            -ms-transition-timing-function:linear;
+            -o-transition-timing-function:linear;
+
+            transition-property:background-color,color,padding,font-size,border;
+            -webkit-transition-property:background-color,color,padding,font-size,border;
+            -moz-transition-property:background-color,color,padding,font-size,border;
+            -ms-transition-property:background-color,color,padding,font-size,border;
+            -o-transition-property:background-color,color,padding,font-size,border;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        There are lots of different kinds of fruit - there are over
+            500 varieties of <span id="banana">banana</span> alone.
+        By the time we add the countless types of apples,oranges,
+            and other well-known fruit,we are faced with thousands of choices.
+    </p>
+</body>
+</html>

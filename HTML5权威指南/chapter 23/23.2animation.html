@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style type="text/css">
+        p{
+            padding:5px;
+            border:medium double black;
+            background-color:lightgray;
+            font-family:sans-serif;
+        }
+        #banana {
+            font-size: large;
+            border: medium solid black;
+        }
+
+        #banana:hover{
+            animation:"GrowShrink" 1000ms linear 100ms infinite;
+            -webkit-animation:"GrowShrink" 1000ms linear 100ms infinite;
+
+        }
+
+        @keyframes GrowShrink{
+            from{
+                font-size:xx-small;
+                background-color:red;
+            }
+            50%{
+                background-color:yellow;
+                padding:4px;
+            }
+            75%{
+                color:white;
+                padding:2px;
+            }
+            to{
+                font-size:x-large;
+                border:medium solid white;
+                background-color:green;
+                padding:4px;
+            }
+        }
+        @-webkit-keyframes GrowShrink{
+            from{
+                font-size:xx-small;
+                background-color:red;
+            }
+            50%{
+                background-color:yellow;
+                padding:4px;
+            }
+            75%{
+                color:white;
+                padding:2px;
+            }
+            to{
+                font-size:x-large;
+                border:medium solid white;
+                background-color:green;
+                padding:4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        There are lots of different kinds of fruit - there are over
+        500 varieties of <span id="banana">banana</span> alone.
+        By the time we add the countless types of apples,oranges,
+        and other well-known fruit,we are faced with thousands of choices.
+    </p>
+</body>
+</html>
