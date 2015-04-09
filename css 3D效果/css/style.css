@@ -1,0 +1,58 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	color:#000;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#container{
+	perspective:800px;
+	-webkit-perspective:800px;
+
+	perspective-origin:50% 50%;
+	-webkit-perspective-origin:50% 50%;
+
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	
+
+}
+
+#box{
+	background-color:#efefef;
+	width:400px;
+	height:400px;
+	margin:20px auto 0;
+	position:relative;
+}
+
+.page{
+	width:360px;
+	height:360px;
+	font-size:360px;
+	font-weight:bold;
+
+	line-height:360px;
+	text-align:center;
+	background-color:black;
+	color:white;
+	padding:20px;
+	position:absolute;
+	transform:rotateX(0deg);
+	-webkit-transform:rotateX(0deg);
+
+}
+#page2,#page3,#page4,#page5,#page6{
+	transform:rotateX(90deg);
+	-webkit-transform:rotateX(90deg);
+
+}
+
+#button{
+	margin:10px 0;
+	text-align:center;
+}
