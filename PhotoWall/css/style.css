@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:none;
+}
+
+#container{
+	width:1000px;
+	height:auto;
+	border:1px solid #efefef;
+	margin:40px auto 0;
+}
+
+#imgBox{
+	position:relative;
+}	
+#imgBox li{
+	width:300px;
+	height:190px;
+	float:left;
+	background-color:#efefef;
+	margin:10px;
+	box-shadow:0 0 10px rgba(0,0,0,0.4);
+	transition:all ease-in-out 0.1s;
+	-webkit-transition:all linear 0.1s;
+	position:absolute;
+}
+#imgBox li img{
+	width:290px;
+	height:180px;
+	margin:5px;
+}
+
+li:nth-child(1){
+	top:50px;left:40px;
+	transform:rotate(-12deg);
+	-webkit-transform:rotate(-12deg);
+	-moz-transform:rotate(-12deg);
+	-o-transform:rotate(-12deg);
+}
+li:nth-child(2){
+	top:10px;left:250px;
+	transform:rotate(2deg);
+	-webkit-transform:rotate(2deg);
+	-moz-transform:rotate(2deg);
+	-o-transform:rotate(2deg);
+}
+li:nth-child(3){
+	top:25px;left:480px;
+	transform:rotate(17deg);
+	-webkit-transform:rotate(17deg);
+	-moz-transform:rotate(17deg);
+	-o-transform:rotate(17deg);
+}
+
+
+li:nth-child(4){
+	top:170px;left:25px;
+	transform:rotate(-5deg);
+	-webkit-transform:rotate(-5deg);
+	-moz-transform:rotate(-5deg);
+	-o-transform:rotate(-5deg);
+}
+li:nth-child(5){
+	top:180px;left:200px;
+	transform:rotate(-3deg);
+	-webkit-transform:rotate(-3deg);
+	-moz-transform:rotate(-3deg);
+	-o-transform:rotate(-3deg);
+}
+li:nth-child(6){
+	top:175px;left:350px;
+	transform:rotate(-12deg);
+	-webkit-transform:rotate(-12deg);
+	-moz-transform:rotate(-12deg);
+	-o-transform:rotate(-12deg);
+}
+li:nth-child(7){
+	top:220px;left:550px;
+	transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+	-moz-transform:rotate(10deg);
+	-o-transform:rotate(10deg);
+}
+li:nth-child(8){
+	top:300px;left:50px;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+}
+li:nth-child(9){
+	top:305px;left:225px;
+	transform:rotate(-30deg);
+	-webkit-transform:rotate(-30deg);
+	-moz-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+}
+li:nth-child(10){
+	top:365px;left:448px;
+	transform:rotate(-12deg);
+	-webkit-transform:rotate(-12deg);
+	-moz-transform:rotate(-12deg);
+	-o-transform:rotate(-12deg);
+}
+
+li:hover{
+	transform:rotate(0deg) scale(1.2);
+	-webkit-transform:rotate(0deg) scale(1.2);
+	-moz-transform:rotate(0deg) scale(1.2);
+	-o-transform:rotate(0deg) scale(1.2);
+	z-index:2;
+}
