@@ -12,22 +12,27 @@ a{
 #container{
 	perspective:800px;
 	-webkit-perspective:800px;
-
+	overflow:hidden;
 	perspective-origin:50% 50%;
 	-webkit-perspective-origin:50% 50%;
 
-	transform-style:preserve-3d;
-	-webkit-transform-style:preserve-3d;
+	
 	
 
 }
 
 #box{
-	background-color:#efefef;
+	
 	width:400px;
 	height:400px;
 	margin:20px auto 0;
 	position:relative;
+	
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+
+
+
 }
 
 .page{
@@ -42,11 +47,30 @@ a{
 	color:white;
 	padding:20px;
 	position:absolute;
-	transform:rotateX(0deg);
-	-webkit-transform:rotateX(0deg);
+	
 
+	transform-origin:bottom;
+	-webkit-transform-origin:bottom;
+
+
+	transition:all linear 1s;
+	-webkit-transition:all linear 0.5s;
+}
+#page1{
+	
+	transform-origin:bottom;
+	-webkit-transform-origin:bottom;
+
+	transition:-webkit-transform 1s linear;
+	-webkit-transition:-webkit-transform 1s linear;
 }
 #page2,#page3,#page4,#page5,#page6{
+	transform-origin:bottom;
+	-webkit-transform-origin:bottom;
+
+	transition:-webkit-transform 1s linear;
+	-webkit-transition:-webkit-transform 1s linear;
+
 	transform:rotateX(90deg);
 	-webkit-transform:rotateX(90deg);
 
