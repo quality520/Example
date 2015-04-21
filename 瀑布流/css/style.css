@@ -1,0 +1,14 @@
+*{margin:0;padding:0;font-family:"Microsoft Yahei";}
+li{list-style:none;}
+a{text-decoration:none;}
+
+#flow-box{width:100%;margin:10px auto 0 auto;position:relative;}
+
+#flow-box li{width:190px;margin:10px 0 0 10px;padding:10px;border:1px solid #efefef;position:absolute;background-color:#EBEBEB;}
+
+#flow-box li img{width:100%;}
+
+#flow-box li a{display:block;width:100%;text-align:center;color:#333;margin-top:10px;}
+
+.loadwrap{position:absolute; left:0; width:100%; text-align:center;}
+

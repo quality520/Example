@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<nead>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>page</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			#container{width:100%;height:100%;}
+
+			#head,#foot{width:100%;height:50px;line-height:50px;background-color:#f00;text-align:center;font-size:16px;font-weight:bold;clear:both;}
+			a{color:black;text-decoration:none;}
+			li{list-style:none;}
+			#main{width:100%;}
+			#main .box{width:200px;height:100px;background-color:#999;float:left;}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="head">
+				头部内容
+			</div>
+			<div id="main">
+				<ul id="boxList">
+					<li class="box" id="box1"></li>
+					<li class="box" id="box2"></li>
+					<li class="box" id="box3"></li>
+					<li class="box" id="box4"></li>
+				</ul>
+			</div>
+			<div id="foot">
+				<a href="javascript:void()">Link</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+				
+
+
+				window.addEventListener("resize", function () {  
+            // 得到屏幕尺寸 (内部/外部宽度，内部/外部高度)  
+              changeSize();
+        }, false); 
+
+				changeSize();
+
+        	function changeSize(){	
+				var oMain = document.getElementById('main');
+				var oHead = document.getElementById('head');
+				var oFoot = document.getElementById('foot');
+				var clientH = document.documentElement.clientHeight;
+				var clientW = document.documentElement.clientWidth;
+				var oBox1 = document.getElementById('box1');
+				var oBox2 = document.getElementById('box2');
+				var oBox3 = document.getElementById('box3');
+				var oBox4 = document.getElementById('box4');
+				var x = Math.floor((clientW - 400)/6);
+				var y = Math.floor((clientH - 300)/6);
+
+				/*
+				oHead.style.marginBottom = y + 'px';
+				oFoot.style.marginTop = y + 'px';
+				*/
+				oBox1.style.marginTop = 2*y +'px';
+				oBox1.style.marginRight = x +'px';
+				oBox1.style.marginBottom = y + 'px';
+				oBox1.style.marginLeft = 2*x + 'px';
+
+				oBox2.style.marginTop = 2*y +'px';
+				oBox2.style.marginRight = 2*x +'px';
+				oBox2.style.marginBottom = y + 'px';
+				oBox2.style.marginLeft = x + 'px';
+
+				oBox3.style.marginTop = y +'px';
+				oBox3.style.marginRight = x +'px';
+				oBox3.style.marginBottom = 2*y + 'px';
+				oBox3.style.marginLeft = 2*x + 'px';
+
+				oBox4.style.marginTop = y +'px';
+				oBox4.style.marginRight = 2*x +'px';
+				oBox4.style.marginBottom = 2*y + 'px';
+				oBox4.style.marginLeft = x + 'px';
+				}
+		</script>
+	</body>
+</html>
