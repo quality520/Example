@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width" initial-scale="1">
+		<title>Canvas</title>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="400" height="400" style="border:1px solid #333;">
+			
+		</canvas>
+	</body>
+	<script type="text/javascript">
+		var oCanvas=document.getElementById('myCanvas');
+		var ctx=oCanvas.getContext('2d');
+		ctx.font="50px Microsoft Yahei";
+		ctx.fillText("Hello World",20,50);
+		ctx.strokeText("Hello Javascript",20,100);
+	</script>
+</html>
