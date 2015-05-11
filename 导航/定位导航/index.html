@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width" initial-scale="1">
+		<title>导航定位</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body{font-size:12px;line-height:1.7;}
+			li{list-style:none;}
+
+
+			#content{width:800px;margin:0 auto;padding:20px;}
+			#content h1{color:#0088bb;}
+
+			#content .item{padding:20px;margin-bottom:20px;border:1px dotted #0088bb;}
+
+			#content .item h2{font-size:16px;font-weight:bold;border-bottom:2px solid #0088bb;margin-bottom:10px;}
+
+			#content li{display:inline;padding-right:10px;}
+			#content li a img{width:230px;height:230px;border:none;}
+
+			/*menu*/
+			#menu{width:100px;position:fixed;left:50%;margin-left:410px;top:100px;}
+			#menu li{margin:5px 0;}
+			#menu a{display:block;width:100px;height:50px;line-height:50px;text-align:center;text-decoration:none;color:#333;font-size:14px;font-weight:bold;}
+			#menu a:hover,#menu .current{background-color:#0088bb;color:#fff;}
+		</style>
+		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+					$(window).scroll(function(){
+						var top=$(document).scrollTop();
+						var menu=$('#menu');
+						var items=$('#content').find('.item');
+						var currentId='';
+						items.each(function(){
+							var m=$(this);
+							var itemTop=m.offset().top;
+							if(top >itemTop-200){
+								currentId='#'+m.attr('id');
+							}else{
+								return false;
+							}
+						});
+
+						var currentLink=menu.find('.current');
+						if(currentId&&currentLink.attr('href')!=currentId){
+							currentLink.removeClass('current');
+							menu.find('[href='+currentId+']').addClass('current');
+						}
+
+					})
+			})
+
+		</script>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<li><a href="#item1" class="current">1F One Piece</a></li>
+				<li><a href="#item2">2F One Piece</a></li>
+				<li><a href="#item3">3F One Piece</a></li>
+				<li><a href="#item4">4F One Piece</a></li>
+				<li><a href="#item5">5F One Piece</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<h1>动漫卡通</h1>
+			<div id="item1" class="item">
+				<h2>1F 海贼王</h2>
+				<ul>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei1.jpg"/></a></li>
+				</ul>
+			</div>
+			<div id="item2" class="item">
+				<h2>2F 海贼王</h2>
+				<ul>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei2.jpg"/></a></li>
+				</ul>
+			</div>
+			<div id="item3" class="item">
+				<h2>3F 海贼王</h2>
+				<ul>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei3.jpg"/></a></li>
+				</ul>
+			</div>
+			<div id="item4" class="item">
+				<h2>4F 海贼王</h2>
+				<ul>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei4.jpg"/></a></li>
+				</ul>
+			</div>
+			<div id="item5" class="item">
+				<h2>5F 海贼王</h2>
+				<ul>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+					<li><a href="#"><img src="images/haizei5.jpg"/></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>
