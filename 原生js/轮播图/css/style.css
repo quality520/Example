@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+li{list-style:none;}
+
+#wrap{width:1000px;height:400px;margin:50px auto 0;position:relative;overflow:hidden;}
+
+#wrap ul{width:6000px;position:absolute;}
+#wrap ul li{width:1000px;float:left;}
+
+#wrap #prev,#wrap #next{display:block;width:45px;height:45px;position:absolute;top:177px;cursor:pointer;}
+#prev{background:url(../images/prev.png) no-repeat center center;left:10px;}
+#next{background:url(../images/next.png) no-repeat center center;right:10px;}
