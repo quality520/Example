@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+li{list-style:none;}
+
+#wrap{width:1000px;height:500px;margin:20px auto 0;position:relative;}
+#wrap ul {width:7060px;height:500px;position:absolute;}
+#wrap ul li{float:left;}
+
+#prev,#next{width:45px;height:45px;line-height:45px;text-align:center;display:block;background-color:#f00;position:absolute;top:225px;cursor:pointer;}
+#prev{left:10px;background:rgba(255,255,255,0.4) url(../images/l.png) no-repeat center center;}
+#next{right:10px;background:rgba(255,255,255,0.4) url(../images/r.png) no-repeat center center;}
+

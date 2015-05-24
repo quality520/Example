@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js原生轮播图</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="wrap">
+    	<ul style="left:0px;">
+        	<li><a href="#"><img src="images/1.png"></a></li>
+            <li><a href="#"><img src="images/2.png"></a></li>
+            <li><a href="#"><img src="images/3.png"></a></li>
+            <li><a href="#"><img src="images/4.png"></a></li>
+            <li><a href="#"><img src="images/5.png"></a></li>
+            <li><a href="#"><img src="images/6.png"></a></li>
+            <li><a href="#"><img src="images/7.png"></a></li>
+        </ul>
+        <span id="prev"></span>
+        <span id="next"></span>
+    </div>
+    <script type="text/javascript">
+	window.onload=function(){
+    	var prev=document.getElementById('prev'),
+			next=document.getElementById('next'),
+			uLeft=document.getElementById('wrap').getElementsByTagName('ul')[0];
+		next.onclick=function(){
+			if(uLeft.style.left==-6000+'px'){
+				uLeft.style.left=0+'px';	
+			}else{
+				uLeft.style.left=parseInt(uLeft.style.left)-1000+'px';
+			}
+		}
+		prev.onclick=function(){
+			if(uLeft.style.left===0+'px'){
+				uLeft.style.left=-6000+'px';	
+			}else{
+				uLeft.style.left=parseInt(uLeft.style.left)+1000+'px';
+			}
+		}
+	}	
+    </script>
+</body>
+</html>

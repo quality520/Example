@@ -7,8 +7,7 @@ window.onload = function(){
 	var isTop = true;
 	//获取当前窗体的高度
 	var clientH = document.documentElement.clientHeight;
-	alert(clientH);
-
+	
 	window.onscroll = function(){
 		//判断当前滚动的高度是否大于当前显示的窗体的高度
 		var oTop = document.documentElement.scrollTop || document.body.scrollTop;
